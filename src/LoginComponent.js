@@ -19,7 +19,7 @@ class LoginComponent extends React.Component {
             e.preventDefault();
             try {
                 var response = await axios.post(
-                    'https://integra-fullstack-backend.herokuapp.com/register/login', {
+                    'https://backend-fullstack-integra.herokuapp.com/register/login', {
                     password: this.state.password,
                     email: this.state.email
                 })
